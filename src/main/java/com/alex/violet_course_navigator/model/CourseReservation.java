@@ -25,7 +25,7 @@ public class CourseReservation implements Serializable {
   private Course course;
 
   @JsonProperty("reservation_date")
-  private LocalDate reservationDate;
+  private LocalDate reservationDate = LocalDate.now();
 
   public CourseReservation() {}
 
